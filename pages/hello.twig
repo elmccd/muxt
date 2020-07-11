@@ -1,0 +1,13 @@
+{% extends "layouts/default.twig" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% block content %}
+{% include 'components/greetings.twig' with { name: 'World'} %}
+{% endblock %}
